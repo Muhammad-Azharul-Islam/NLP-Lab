@@ -10,16 +10,6 @@ nltk.download('wordnet', quiet=True)
 nltk.download('stopwords', quiet=True)
 
 def preprocess_text(text):
-    """
-    Preprocess text: remove special characters, URLs, patterns, 
-    stemming, lemmatization and tokenization
-    
-    Args:
-        text (str): Input text
-        
-    Returns:
-        dict: Dictionary containing processed text and statistics
-    """
     # Initialize processing tools
     stemmer = PorterStemmer()
     lemmatizer = WordNetLemmatizer()
